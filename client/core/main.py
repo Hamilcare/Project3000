@@ -26,7 +26,7 @@ def main():
 
         pygame.quit()
     except pygame.error as e :
-        print("pygame error({0}): {1}".format(e.errno, e.strerror))
+        print(str(e))
         pygame.quit()
 
 
