@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.6"
+
+# command to install dependencies
+install:
+  - pip install pygame
+
+# command to run tests
+script: python ./client/core/main.py
+
+
