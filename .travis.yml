@@ -7,6 +7,6 @@ install:
   - pip install pygame
 
 # command to run tests
-scripts: python ./client/core/main.py
+script: python ./client/core/main.py
 
 
