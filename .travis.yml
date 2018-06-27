@@ -5,4 +5,6 @@ python:
 # command to install dependencies
 install:
   - pip install pygame
+
 # command to run tests
+python ./client/core/main.py
