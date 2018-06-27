@@ -7,7 +7,7 @@ def main():
     try:
         print("Appuyez sur n'importe quelle touche pour lancer la partie !")
         pygame.init()
-        
+
         ecran = pygame.display.set_mode((800, 600))
 
         continuer = True
@@ -25,8 +25,8 @@ def main():
             pygame.display.flip()
 
         pygame.quit()
-    except pygame.error:
-        print(str(Error))
+    except pygame.error as e :
+        print("pygame error({0}): {1}".format(e.errno, e.strerror))
         pygame.quit()
 
 
