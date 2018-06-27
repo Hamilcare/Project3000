@@ -1,4 +1,4 @@
-# Project3000
+# Project3000 [![Build Status](https://travis-ci.org/Hamilcare/Project3000.svg?branch=master)](https://travis-ci.org/Hamilcare/Project3000)
 
 ## setup
 1) go to https://www.python.org/downloads/ and download
