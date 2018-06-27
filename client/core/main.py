@@ -6,7 +6,6 @@ from game import Game
 def main():
     try:
         print("Appuyez sur n'importe quelle touche pour lancer la partie !")
-
         pygame.init()
         
         ecran = pygame.display.set_mode((800, 600))
@@ -26,7 +25,7 @@ def main():
             pygame.display.flip()
 
         pygame.quit()
-    except Error:
+    except pygame.error:
         print(str(Error))
         pygame.quit()
 
