@@ -1,18 +1,17 @@
 import pygame
 import sys
-sys.path.append("../network")
-from stubNetwork import StubNetwork
+
 sys.path.append("../utils")
 from direction import Direction
 
 from pygame import locals as const
 
 class Player:
-    def __init__(self):
+    def __init__(self, network_handler):
         self.abs = 0
         self.ord = 0
         self.move = 20
-        self.network_handler = StubNetwork()
+        self.network_handler = network_handler
 
     def process_event(self, event: pygame.event):
         if event.key == const.K_w:
