@@ -36,6 +36,7 @@ class Game:
         self.prepare()
         
         while self.continuer:
+            print(str(pygame.event.get()))
             for event in pygame.event.get():
                 self.process_event(event)
             
